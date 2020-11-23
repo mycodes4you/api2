@@ -4,15 +4,15 @@
     	require "connect.php";
 	}
 
-	$db = "sambhav";
+	$db = "admin_api2rest";
 
 	if (!mysql_select_db($db)) {
 	
-	    echo("creating database 'sambhav'!<br/>");
+	    echo("creating database 'admin_api2rest'!<br/>");
 	    mysql_query('CREATE DATABASE '. $db);
 	
 	} else {
-		echo("'sambhav' database already exists!<br/>");
+		echo("'admin_api2rest' database already exists!<br/>");
 	}
 
 	$selectingDatabase = true;

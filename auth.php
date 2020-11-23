@@ -9,7 +9,7 @@ function authenticate () {
     $secret_key = 'some_test_key';
     $valid_for = '3600';
     if ($_POST['usr'] && $_POST['pw']) {
-        $usr = hash($_POST['usr']);
+        $usr = hash('sha256', $_POST['usr']);
         $pw = $_POST['pw'];
         if ($usr == $db_usr && $pw == hash('sha256', $db_usr_pw)) {
             $token = array();

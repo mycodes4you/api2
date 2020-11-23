@@ -22,7 +22,7 @@ class Database {
      * Crea la conexion a la base de datos
      */
     public function __construct() {
-        $this->pdo = new PDO('mysql:host=localhost;dbname=NOMBRE_BASE_DATOS;charset=utf8', 'USUARIO_BASE_DATOS', 'CONTRASEÑA');
+        $this->pdo = new PDO('mysql:host=mycodes4you.com;dbname=admin_api2rest;charset=utf8', 'apiv2G-xYt4_l', '707Uw$mr');
         
         // Desactivar preparaciones emuladas. Esto asegura que obtenga declaraciones preparadas.
         // y evitamos inyeccion sql

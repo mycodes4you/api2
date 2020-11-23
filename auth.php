@@ -19,7 +19,7 @@ function authenticate () {
             return false;
         } else {
             http_response_code(401);
-            echo 'error #1'
+            echo 'error #1';
             return false;
         }
     } else {
@@ -32,12 +32,12 @@ function authenticate () {
                 return $token->id;
             } else {
                 http_response_code(401);
-                echo 'error #2'
+                echo 'error #2';
                 return false;
             }
         } else {
             http_response_code(401);
-            echo 'error #3'
+            echo 'error #3';
             return false;
         }
     }

@@ -3,10 +3,10 @@
 class Database{
 
 	// specify your own database credentials
-	private $host = "localhost";
-	private $db_name = "api_db";
-	private $username = "root";
-	private $password = "";
+	private $host = "mycodes4you.com";
+	private $db_name = "admin_api2rest";
+	private $username = "apiv2G-xYt4_l";
+	private $password = "707Uw$mr";
 	public $con;
 
 	// get the database connection
